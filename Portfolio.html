@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Scrollable Page with Background Effect</title>
   <link rel="stylesheet" href="style.css">
-
+  <script src="script.js" defer></script>
 </head>
 <body>
   <!-- Section with background effect -->
@@ -13,11 +13,11 @@
     <div class="background-effect"></div>
     <div class="content-container">
       <div class="button-container">
-        <button class="btn btn-4">Home</button>
-        <button class="btn btn-4" onclick="document.getElementById('content-section').scrollIntoView({ behavior: 'smooth' });">About</button>
+        <button onclick="Homescroll()" class="btn btn-4">Home</button>
+        <button onclick="scrollToSection()" class="btn btn-4">About Me</button>
         <button class="btn btn-4">Projects</button>
         <button class="btn btn-4">Contact</button>
-        <button class="btn btn-4" >CV</button>
+       <a href="soup/CV (1).pdf"> <button class="btn btn-4" href>CV</button> </a>
       </div>
       <ul>
         <li>
@@ -64,7 +64,7 @@
     </div>
   </section>
     <!-- images and bu -->  
-    <section id="content-section" class="content-section">
+  <section class="content-section">
     <img class="image-dheeraj" src="soup/Dheeraj Varma.png" alt="Dheeraj Varma">
     <img class="image-based" src="soup/based.png" alt="Based Image">
     <img class="image-backend" src="soup/backend.png" alt="Backend Image">
