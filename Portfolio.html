@@ -8,17 +8,23 @@
   <script src="script.js" defer></script>
 </head>
 <body>
+  <div id="loading-screen" class="loading-screen">
+    <div class="loading-container">
+      <p class="loading-text">Loading...</p>
+    </div>
+  </div>
+  
   <!-- Section with background effect -->
   <section class="background-section">
     <div class="background-effect"></div>
     <div class="content-container">
-      <div class="button-container">
+      <div id="button-container" class="button-container">
         <button onclick="Homescroll()" class="btn btn-4">Home</button>
         <button onclick="scrollToSection()" class="btn btn-4">About Me</button>
-        <button class="btn btn-4">Projects</button>
+        <button onclick="ProjectScroll()" class="btn btn-4">Projects</button>
         <button class="btn btn-4">Contact</button>
-       <a href="soup/CV (1).pdf"> <button class="btn btn-4" href>CV</button> </a>
-      </div>
+        <a href="soup/CV (1).pdf"> <button class="btn btn-4" href>CV</button> </a>
+    </div>
       <ul>
         <li>
           <a class="facebook" href="https://www.facebook.com/dheeraj.subburi.9">
@@ -87,7 +93,12 @@
   </div>
 
   <div class="third-background">
-    
+    <h1>Projects! </h1>
+    <div class="card">
+      <div class="glow"></div>
+      <h2>01</h2>
+      <p>Move your mouse cursor over the card.</p>
+    </div>
 </div>
 </body>
 </html>
